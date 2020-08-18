@@ -1299,8 +1299,7 @@ namespace urtextedit
             FileAssociations.EnsureAssociationsSet();
             if (_fname != string.Empty)
                 CreateTab(_fname);
-            mruMenu.LoadFromRegistry();
-            //FileAssociations.SetAssociation(".ur2", "830202", "urCryptedFile", Application.StartupPath + @"\urtextedit.exe");
+            mruMenu.LoadFromRegistry();           
             SetAssociation(".cs", "OpenInUREdit", System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName, "CSFile");
             configStep_addShortcutToStartupGroup();
         }
